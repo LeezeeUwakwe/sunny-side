@@ -7,6 +7,13 @@
 .logo img {
     width: 200px;
 }
+.hamburger {
+    display: none;
+}
+.close-mobile {
+    width: 40px;
+    display: none;
+}
 .first {
     padding: 30px 50px;
     background: url('./images/image-header\ desktop.jpg');
@@ -102,11 +109,11 @@ a {
 }
 .transform a {
    
-    border-bottom: 4px solid #FFD302;
+    border-bottom: 4px solid hsl(51, 100%, 49%);
     
 }
 .standout-text a {
-    border-bottom: 4px solid #FE7B6B;
+    border-bottom: 4px solid hsl(7, 99%, 70%);
 }
 .box {
     width: 50%;
@@ -147,6 +154,135 @@ a {
     padding-top: 25px;
     font-size: 18px;
 }
+.third {
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 100px;
+}
+.testimonials h1 {
+    font-size: 30px;
+    color: hsl(232, 10%, 55%);
+    text-align: center;
+    padding-top: 60px;
+}
+.persons {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.client {
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+
+}
+.client img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.client p {
+    width: 340px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 40px;
+    color: hsl(232, 10%, 55%);
+    line-height: 25px;
+    
+}
+.client h2 {
+    margin-top: 30px;
+    color:  hsl(212, 27%, 19%);
+
+}
+.client h6 {
+    margin-top: 15px;
+    font-size: 10px;
+    color: hsl(232, 10%, 55%);
+} 
+.jpegs {
+    margin-top: 60px;
+    display: flex;
+}
+.jpegs img {
+    width: 25%;
+}
+footer {
+    padding: 20px 0 5px 0;
+    height: 30vh;
+    background-color: #90D4C5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Barlow', sans-serif;
+}
+
+.footer img  {
+    width: 30px;
+}
+footer ul {
+    margin-top: 30px;
+    display: flex;
+}
+footer li {
+    list-style: none;
+    font-size: 18px;
+    padding-left: 25px;
+    color:  #458C7E;
+}
+.footer-icon img{
+    padding-left: 10px;
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    .logo img {
+        width: 150px ;
+    }
+    .hamburger {
+        display: block;
+    }
+     
+    .first {
+        padding: 20px 10px;
+        background: url('./images/image-header\ mobile.jpg');
+        background-position: bottom;
+        background-size: cover;
+
+    }
+    .holder h1 {
+        font-size: 50px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .arrow-down {
+        width: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    nav {
+        display: none;
+    }
+    .second, .jpegs, .third, footer{
+        display: none;
+    }
+}
+
+
+
 
 
 
