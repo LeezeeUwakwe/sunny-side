@@ -10,8 +10,8 @@
 .hamburger {
     display: none;
 }
-.close-mobile {
-    width: 40px;
+.close-btn {
+   
     display: none;
 }
 .first {
@@ -63,6 +63,7 @@ nav li a {
     font-family: 'Fraunces', serif;
 }
 .holder h1 {
+    margin-top: 70px;
     font-size: 70px;
     color: #fff;
 }
@@ -173,7 +174,10 @@ a {
 .client {
     text-align: center;
     font-family: 'Barlow', sans-serif;
-
+    transition: transform 0.4s;
+}
+.client:hover {
+    transform: scale(0.8, 0.8);
 }
 .client img {
     width: 150px;
@@ -244,10 +248,18 @@ footer li {
     }
     .hamburger {
         display: block;
+        width: 30px;
+    }
+    .close-btn {
+        width: 30px;
+        display: none;
+    }
+    header {
+        align-items: center;
     }
      
     .first {
-        padding: 20px 10px;
+        padding: 20px 15px;
         background: url('./images/image-header\ mobile.jpg');
         background-position: bottom;
         background-size: cover;
@@ -261,6 +273,7 @@ footer li {
     .arrow-down {
         width: 20px;
     }
+    
 
 
 
