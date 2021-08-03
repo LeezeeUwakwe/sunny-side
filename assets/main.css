@@ -263,23 +263,61 @@ footer li {
     .container {
         width: 100%;
     }
+    nav a::after {
+        display: none;
+      }
+     
     nav {
         display: none;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        background-color: #3EBFFF;  
     }
+
+  
     .logo img {
-        width: 150px ;
+        margin-top: 12px;
+        width: 170px;
     }
     .hamburger {
         display: block;
         width: 30px;
+    
     }
     .close-btn {
         width: 30px;
-        display: none;
+        display: block;
+        float: right;
+        margin: 20px 15px 0 15px;
     }
     header {
         align-items: center;
+       
     }
+    header nav ul  {
+        margin-top: 115px;
+        overflow: hidden;
+        flex-direction: column;
+        /* display: block; */
+      }
+      header nav ul.open {
+        height: auto;
+      }
+      header nav ul li {
+        float: none;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 40px;
+      }
+      header nav ul li a {
+       font-size: 25px;
+        
+      } 
     .first {
         padding: 20px 15px;
         background: url('./images/image-header\ mobile.jpg');
